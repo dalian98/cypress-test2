@@ -13,3 +13,11 @@ export const about_us ={
     common_problem:'.ant-radio-group > :nth-child(5) > :nth-child(2)',//常见问题
     common_problem_1:'.title___2ihOG',//如何注册个人账号？
 }
+//右侧固定导航栏定位信息
+export const right_column ={
+    financing:'.noleftborder___3tRe2 > p',//融资服务界面导航
+    broadcasting_financing:'.fixedMenu___aN5jx > :nth-child(1) > img',//右侧固定栏-广播融资
+    normal_question:':nth-child(2) > img',//右侧固定栏-常见问题
+    notice:'.fixedMenu___aN5jx > :nth-child(3) > img',//右侧固定栏-通知公告
+    phone:':nth-child(4) > img'//右侧固定栏-联系方式
+}
