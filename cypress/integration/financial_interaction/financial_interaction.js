@@ -32,7 +32,6 @@ describe('财经互动-测试用例集',function(){
         cy.get('[title="四川*****询有限公司"]').should('exist')
         cy.get('[style="padding: 0px 20px;"] > :nth-child(3) > .ant-btn').click()
         cy.get('[title="永红*****"]').should('exist')
-
     })
-    
+
 })
