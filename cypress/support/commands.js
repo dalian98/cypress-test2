@@ -34,7 +34,7 @@ Cypress.Commands.add('adminlogin', (username, password) => {
 })
 //银行或政府登录
 Cypress.Commands.add('banklogin', (username, password) => {
-    cy.visit('http://192.168.10.111/istui/login')
+    cy.visit('http://192.168.10.111/istui/#/login')
     cy.get('#username').type(username)
     cy.get('#password').type(password)
     cy.get('.ant-btn').click()
@@ -42,7 +42,7 @@ Cypress.Commands.add('banklogin', (username, password) => {
 })
 //普通用户-企业登录
 Cypress.Commands.add('companylogin', (code, phone, password) => {
-    cy.visit('http://192.168.10.112/cui/login')
+    cy.visit('http://192.168.10.112/cui/#/login')
     cy.get('#accountNo').type(code)
     cy.get('#phone').type(phone)
     cy.get('#password').type(password)
@@ -51,7 +51,7 @@ Cypress.Commands.add('companylogin', (code, phone, password) => {
 })
 //个人用户登录
 Cypress.Commands.add('userlogin', (phone, password) => {
-    cy.visit('http://192.168.10.112/cui/login')
+    cy.visit('http://192.168.10.112/cui/#/login')
     cy.get('.ant-select-selection__rendered').click()
     cy.get('.ant-select-dropdown-menu > [aria-selected="false"]').click()
     cy.get('#phone').type(phone)
