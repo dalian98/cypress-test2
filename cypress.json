@@ -2,5 +2,6 @@
   "baseUrl": "http://192.168.10.110",
   "projectId": "5n3uqn",
   "viewportWidth": 1300,
-  "viewportHeight": 830
+  "viewportHeight": 830,
+  "$schema": "https://on.cypress.io/cypress.schema.json"
 }
