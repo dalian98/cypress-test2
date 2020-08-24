@@ -3,5 +3,6 @@
   "projectId": "5n3uqn",
   "viewportWidth": 1300,
   "viewportHeight": 830,
-  "$schema": "https://on.cypress.io/cypress.schema.json"
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "chromeWebSecurity": false
 }
