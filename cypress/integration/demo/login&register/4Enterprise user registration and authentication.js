@@ -85,7 +85,7 @@ describe('注册认证测试用例集',function(){
         cy.get(register.registerbtn).click()
           
     })
-    it('个人账号认证',function(){
+    it.skip('个人账号认证',function(){
         cy.userlogin(phone1,'admin@123')
         cy.get(page_apply.here).click()
         cy.waitFor(page_apply.data_perfection)

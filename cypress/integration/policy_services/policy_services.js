@@ -1,5 +1,5 @@
 import {policy_services} from '../../fixtures/policy_services/policy_services_loction'
-
+//不需要登录
 describe('政策服务测试用例集',function(){
     this.beforeEach('访问政策服务界面',function(){
         cy.visit('http://192.168.10.112/cui/policy')

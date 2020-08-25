@@ -16,7 +16,7 @@ describe('关于我们模块测试用例集',function(){
     })
     it('联系方式',function(){
         cy.get(about_us.contact_information).click()
-        cy.wait(3000)
+        cy.wait(5000)
         cy.get(about_us.query_input).type('成都')
         cy.get(about_us.query_btn).click()
     })
@@ -26,7 +26,7 @@ describe('关于我们模块测试用例集',function(){
         cy.get(about_us.commit_btn).click()
         cy.url().should('eql','http://192.168.10.112/cui/login')
     })
-    it.only('常见问题',function(){
+    it('常见问题',function(){
         cy.get(about_us.common_problem).click()
         cy.get(about_us.common_problem_1).should('have.text','如何注册个人账号？')
 

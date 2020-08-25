@@ -14,7 +14,7 @@ export const register = {
 //企业资料填写界面
 export const page_apply = {
     here :'.ant-row > a',//此处按钮
-    data_perfection : '#root > section > main > div > div > div > div:nth-child(3) > div > div.ant-col.ant-col-18.ant-col-offset-8.msgBtn___xIUCG > button',//马上完善资料按钮
+    data_perfection : '#root > div:nth-child(2) > section > main > div > div > div > div:nth-child(3) > div > div.ant-col.ant-col-18.ant-col-offset-8.msgBtn___xIUCG > button',//马上完善资料按钮
     name : '#name',//企业名称输入框
     type_click1 : '.ant-select-selection__rendered',//企业类型点击1
     type_select2 : '.ant-select-dropdown-menu-item-active',//企业类型选择2
