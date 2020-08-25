@@ -7,7 +7,7 @@ describe('管理端登录测试用例集',function(){
     beforeEach(() =>{
         cy.visit('/ui/#/login')//管理员登录界面
     })
-    it.only('正确的用户名密码',function(){
+    it('正确的用户名密码',function(){
         cy.get(loginadmin.username).type('pbc_scs_admin')
         cy.get(loginadmin.password).type('admin@123')
         cy.get(loginadmin.loginbtn).click()
