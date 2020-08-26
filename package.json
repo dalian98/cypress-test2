@@ -11,7 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^5.0.0",
-    "cypress-file-upload": "^4.0.7"
+    "cypress-file-upload": "^4.0.7",
+    "cypress-xpath": "^1.6.0"
   },
   "dependencies": {
     "mysql": "^2.18.1"
