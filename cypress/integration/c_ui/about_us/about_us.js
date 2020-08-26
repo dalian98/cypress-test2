@@ -1,4 +1,4 @@
-import {about_us} from '../../fixtures/about_us_location/about_us_location'
+import {about_us} from '../../../fixtures/c_ui_location/about_us_location/about_us_location'
 
 
 describe('关于我们模块测试用例集',function(){
@@ -16,7 +16,7 @@ describe('关于我们模块测试用例集',function(){
     })
     it.only('联系方式',{retries: {runMode: 2, openMode: 1}},function(){
         cy.get(about_us.contact_information).click()
-        cy.wait(2000)
+        cy.wait(3000)
         cy.get(about_us.query_input).type('成都')
         cy.get(about_us.query_btn).click()
     })

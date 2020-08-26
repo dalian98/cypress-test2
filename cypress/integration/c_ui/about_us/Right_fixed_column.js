@@ -1,4 +1,4 @@
-import {right_column} from '../../fixtures/about_us_location/about_us_location'
+import {right_column} from '../../../fixtures/c_ui_location/about_us_location/about_us_location'
 
 describe('右侧固定栏跳转路径是否正确',function(){
     beforeEach('登录c端',function(){
