@@ -1,4 +1,4 @@
-import {financial_interaction} from '../../fixtures/financial_interaction_location/financial_interaction_location'
+import {financial_interaction} from '../../../fixtures/c_ui_location/financial_interaction_location/financial_interaction_location'
 
 describe('财经互动-测试用例集',function(){
     it('查询遂宁市船山区2018年度数据',function(){

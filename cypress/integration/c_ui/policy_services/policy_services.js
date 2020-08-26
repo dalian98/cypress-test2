@@ -1,4 +1,4 @@
-import {policy_services} from '../../fixtures/policy_services/policy_services_loction'
+import {policy_services} from '../../../fixtures/c_ui_location/policy_services/policy_services_loction'
 //不需要登录
 describe('政策服务测试用例集',function(){
     this.beforeEach('访问政策服务界面',function(){
