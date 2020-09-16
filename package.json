@@ -11,7 +11,11 @@
   "license": "ISC",
   "devDependencies": {
     "cypress": "^5.0.0",
+<<<<<<< HEAD
     "cypress-file-upload": "^4.1.0",
+=======
+    "cypress-file-upload": "^4.0.7",
+>>>>>>> 10b4aba05b25d9d236f0b153149249bbbefdd412
     "cypress-xpath": "^1.6.0"
   },
   "dependencies": {
