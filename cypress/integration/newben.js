@@ -30,7 +30,7 @@ describe('newben检查',function(){
         .should('have.text','running')
 
     })
-    it.only('courier', function(){
+    it('courier', function(){
         cy.visit('http://10.0.1.17:12366/ui')
         cy.get('#userName').type('admin')
         cy.get('#password').type('password')
@@ -43,4 +43,4 @@ describe('newben检查',function(){
 
         
     });
-})
+}) 
