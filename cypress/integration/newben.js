@@ -44,3 +44,4 @@ describe('newben检查',function(){
         
     });
 }) 
+//npm run cy:run -- --spec "cypress/integration/newben.js"
