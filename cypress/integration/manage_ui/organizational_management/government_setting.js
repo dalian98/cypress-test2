@@ -17,7 +17,7 @@ describe('政府机构设置搜索用例集',function(){
         cy.get(government.query_btn).click()
         cy.get(government.result).should('have.text','91110113610900938Q')
     });
-    it.only('按统一社会信用码搜索', () => {
+    it('按统一社会信用码搜索', () => {
         cy.get(government.code_input).type('91110113610900938Q')
         cy.get(government.query_btn).click()
         cy.get(government.result).should('have.text','91110113610900938Q')

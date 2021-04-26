@@ -9,7 +9,7 @@ describe('互联网端登录测试用例集',function(){
 
     
     })
-    it('个人消费者登录',function(){
+    it.only('个人消费者登录',function(){
         cy.userlogin('18110002890','admin@123')
         cy.get(loginuser.personal).trigger('mouseover')
         cy.get(loginuser.personal_self).click()

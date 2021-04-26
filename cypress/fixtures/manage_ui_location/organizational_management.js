@@ -1,3 +1,4 @@
+//导航-机构管理-人行机构设置
 export const organizational = {
     bank_setting:'.ant-layout-sider-children > .ant-menu > :nth-child(2) > .ant-menu-submenu-title',//机构设置
     pepole_setting:'.ant-menu-submenu>:nth-child(2)>:nth-child(1)>a',//人行机构设置
@@ -11,7 +12,15 @@ export const organizational = {
     name:'.ant-select-search__field__wrap > .ant-input',//机构名称
     add_btn:':nth-child(1) > :nth-child(1) > :nth-child(1) > .ant-btn',//添加机构按钮
 }
-
+//导航-机构管理-人行机构设置-添加机构界面
+export const add ={
+    add_btn:':nth-child(1) > :nth-child(1) > :nth-child(1) > .ant-btn',//添加机构按钮
+    superior_ture:'#superior > :nth-child(1) > :nth-child(2)',//是有直属上级行
+    superior_false:':nth-child(2) > .ant-radio',//否有直属上级行
+    code:'#orgFinancialInstitutionCode',//机构编码
+    orgName:'#orgName',//机构名称   
+}
+//导航-机构管理-金融机构设置
 export const fancing = {
     fancing_setting:'.ant-menu > :nth-child(2) > a',//金融机构设置
     adress1:':nth-child(1) > .ant-row > .ant-form-item-control-wrapper > .ant-form-item-control > .ant-form-item-children > .ant-cascader-picker > .ant-cascader-picker-label',//机构地址
@@ -27,8 +36,9 @@ export const fancing = {
     leibie1_1_1:'[title="中国工商银行"]',//中国工商银行
     organization_input:'.ant-select-search__field__wrap > .ant-input',//机构名称输入框
 }
+//导航-机构管理-政府机构设置
 export const government = {
-    government_setting:'.ant-menu > :nth-child(3) > a',//金融机构设置
+    government_setting:'.ant-menu > :nth-child(3) > a',//政府机构设置
     organization_level:'.ant-form-item-children > .ant-select > .ant-select-selection > .ant-select-selection__rendered > .ant-select-selection__placeholder',//机构等级
     organization_level1:'[title="一级"]',//机构等级一级
     query_btn:'.ant-row-flex > :nth-child(1) > .ant-btn',//查询按钮
@@ -36,8 +46,9 @@ export const government = {
     organization_input:'.ant-select-search__field__wrap > .ant-input',//机构名称输入框
     code_input:'#creditCode',//统一社会信用码输入框
 }
+//导航-机构管理-合作企业设置
 export const enterprise = {
-    enterpriset_setting:'.ant-menu > :nth-child(4) > a',//金融机构设置
+    enterpriset_setting:'.ant-menu > :nth-child(4) > a',//合作企业设置
     organization_level:'.ant-form-item-children > .ant-select > .ant-select-selection > .ant-select-selection__rendered > .ant-select-selection__placeholder',//机构等级
     organization_level1:'[title="分支机构"]',//机构等级一级
     query_btn:'.ant-row-flex > :nth-child(1) > .ant-btn',//查询按钮
@@ -46,11 +57,3 @@ export const enterprise = {
     code_input:'#creditCode',//统一社会信用码输入框
 }
 
-export const add ={
-    add_btn:':nth-child(1) > :nth-child(1) > :nth-child(1) > .ant-btn',//添加机构按钮
-    superior_ture:'#superior > :nth-child(1) > :nth-child(2)',//是有直属上级行
-    superior_false:':nth-child(2) > .ant-radio',//否有直属上级行
-    code:'#orgFinancialInstitutionCode',//机构编码
-    orgName:'#orgName',//机构名称
-    
-}

@@ -9,7 +9,7 @@ const phone1 = getMoble()//整一个随机的电话号码给个人用
 console.log(phone,idcard)
 describe('注册认证测试用例集',function(){
     
-    it('注册企业账号',function(){
+    it.only('注册企业账号',function(){
         cy.visit('http://192.168.10.112/cui/login/register')
         cy.get(register.code).type(idcard)
         cy.get(register.phone).type(phone)
@@ -19,7 +19,7 @@ describe('注册认证测试用例集',function(){
         cy.get(register.agree).click()
         cy.get(register.registerbtn).click()     
     })
-    it('注册企业账号进行企业认证',function(){
+    it.only('注册企业账号进行企业认证',function(){
         cy.companylogin(idcard,phone,'admin@123')
         cy.get(page_apply.here).click()
         cy.waitFor(page_apply.data_perfection)
@@ -62,7 +62,7 @@ describe('注册认证测试用例集',function(){
     it.skip('管理端审核通过企业认证',function(){
         cy.adminlogin('pbc_scs_admin','admin@123')
         cy.get(Internet_user_manage.user_manage).click()
-        cy.get(Internet_user_manage.Internet_user).click()
+        cy.get(Internet_user_manage.Internet_user).click() 
         cy.get(Internet_user_manage.userName).type(idcard)
         cy.get(Internet_user_manage.query_btn).click()
         cy.wait(3000)
